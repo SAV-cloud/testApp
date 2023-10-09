@@ -1,0 +1,10 @@
+<div class="header">
+    Конвертер валют
+  </div>
+<ul>
+    <li *ngFor="let currency of item" class="line">
+        <strong>Сurrency: </strong> {{ currency.name }}<br>
+        <strong>Rate Buy: </strong> {{ currency.rateBuy }}<br>
+        <strong>Rate Sell: </strong> {{ currency.rateSell }}<br>
+    </li>
+</ul>

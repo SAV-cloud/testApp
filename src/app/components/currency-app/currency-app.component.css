@@ -1,0 +1,25 @@
+  .converter-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  input[type="number"],
+  select {
+    font-size: 16px;
+    padding: 8px;
+    margin: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  span {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  input[disabled] {
+    background-color: #f0f0f0;
+    cursor: not-allowed;
+  }
+  

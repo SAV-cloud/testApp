@@ -1,0 +1,17 @@
+<app-header [item]="arrayHeaderValue"></app-header>
+
+<div class="converter-container">
+<input type="number" [(ngModel)]="amount" (ngModelChange)="convertCurrency()">
+<select [(ngModel)]="fromCurrency" (ngModelChange)="convertCurrency()">
+    <option value="UAH">UAH</option>
+    <option value="USD">USD</option>
+    <option value="EUR">EUR</option>
+</select>
+<span> = </span>
+<input type="number" [value]="convertedAmount" disabled>
+<select [(ngModel)]="toCurrency" (ngModelChange)="convertCurrency()">
+    <option value="UAH">UAH</option>
+    <option value="USD">USD</option>
+    <option value="EUR">EUR</option>
+</select>
+</div>
